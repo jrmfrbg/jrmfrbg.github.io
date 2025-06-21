@@ -494,7 +494,7 @@
 
     <script>
         // Typing animation functionality
-        function typeText(element, text, speed = 300) {
+        function typeText(element, text, speed = 75) {
             return new Promise((resolve) => {
                 let i = 0;
                 element.textContent = '';
@@ -516,75 +516,75 @@
         // Typing animations for different sections
         const typingAnimations = {
             about: async () => {
-                await typeText(document.getElementById('typing-name'), 'Jorim', 150);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-title'), 'Backend Developer & Student', 80);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-location'), 'Germany 🇩🇪', 100);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-education'), 'Abitur (graduating 2026)', 80);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-passion1'), 'Systems Programming', 80);
-                await new Promise(resolve => setTimeout(resolve, 200));
-                await typeText(document.getElementById('typing-passion2'), 'Embedded Development', 80);
-                await new Promise(resolve => setTimeout(resolve, 200));
-                await typeText(document.getElementById('typing-passion3'), 'Open Source', 80);
-                await new Promise(resolve => setTimeout(resolve, 200));
-                await typeText(document.getElementById('typing-passion4'), 'Stage Technology', 80);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-motto'), 'Always learning, always building 🚀', 80);
+                await typeText(document.getElementById('typing-name'), 'Jorim', 38);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-title'), 'Backend Developer & Student', 20);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-location'), 'Germany 🇩🇪', 25);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-education'), 'Abitur (graduating 2026)', 20);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-passion1'), 'Systems Programming', 20);
+                await new Promise(resolve => setTimeout(resolve, 50));
+                await typeText(document.getElementById('typing-passion2'), 'Embedded Development', 20);
+                await new Promise(resolve => setTimeout(resolve, 50));
+                await typeText(document.getElementById('typing-passion3'), 'Open Source', 20);
+                await new Promise(resolve => setTimeout(resolve, 50));
+                await typeText(document.getElementById('typing-passion4'), 'Stage Technology', 20);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-motto'), 'Always learning, always building 🚀', 20);
             },
             
             experience: async () => {
-                await typeText(document.getElementById('typing-exp-header'), 'Professional Experience', 100);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-role1'), 'Part-time Stage Technician', 80);
-                await new Promise(resolve => setTimeout(resolve, 200));
-                await typeText(document.getElementById('typing-company1'), 'Freelance - Lighting & Sound Systems', 80);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-role2'), 'Software Development Intern', 80);
-                await new Promise(resolve => setTimeout(resolve, 200));
-                await typeText(document.getElementById('typing-company2'), 'Mercedes-Benz - Open Source Department', 80);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-exp-note'), 'Currently pursuing Abitur while gaining real-world tech experience', 60);
+                await typeText(document.getElementById('typing-exp-header'), 'Professional Experience', 25);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-role1'), 'Part-time Stage Technician', 20);
+                await new Promise(resolve => setTimeout(resolve, 50));
+                await typeText(document.getElementById('typing-company1'), 'Freelance - Lighting & Sound Systems', 20);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-role2'), 'Software Development Intern', 20);
+                await new Promise(resolve => setTimeout(resolve, 50));
+                await typeText(document.getElementById('typing-company2'), 'Mercedes-Benz - Open Source Department', 20);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-exp-note'), 'Currently pursuing Abitur while gaining real-world tech experience', 15);
             },
             
             skills: async () => {
-                await typeText(document.getElementById('typing-tech-header'), 'Tech Stack Configuration', 100);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-backend'), 'Backend Development', 80);
-                await new Promise(resolve => setTimeout(resolve, 200));
-                await typeText(document.getElementById('typing-web'), 'Web Development', 80);
-                await new Promise(resolve => setTimeout(resolve, 200));
-                await typeText(document.getElementById('typing-embedded'), 'Embedded Systems', 80);
-                await new Promise(resolve => setTimeout(resolve, 200));
-                await typeText(document.getElementById('typing-environment'), 'Environment', 80);
+                await typeText(document.getElementById('typing-tech-header'), 'Tech Stack Configuration', 25);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-backend'), 'Backend Development', 20);
+                await new Promise(resolve => setTimeout(resolve, 50));
+                await typeText(document.getElementById('typing-web'), 'Web Development', 20);
+                await new Promise(resolve => setTimeout(resolve, 50));
+                await typeText(document.getElementById('typing-embedded'), 'Embedded Systems', 20);
+                await new Promise(resolve => setTimeout(resolve, 50));
+                await typeText(document.getElementById('typing-environment'), 'Environment', 20);
             },
             
             projects: async () => {
-                await typeText(document.getElementById('typing-projects-header'), 'Featured Projects', 100);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-project1'), 'modularMidiDriver', 80);
-                await new Promise(resolve => setTimeout(resolve, 200));
-                await typeText(document.getElementById('typing-project1-desc'), 'A modular MIDI driver system for embedded devices, focusing on real-time performance and extensibility.', 50);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-project2'), 'MeinLieberScholli!', 80);
-                await new Promise(resolve => setTimeout(resolve, 200));
-                await typeText(document.getElementById('typing-project2-desc'), 'Bidirectional power meter system for monitoring and managing electrical power flow in both directions.', 50);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-more-projects'), 'More projects coming soon... 🚧', 80);
+                await typeText(document.getElementById('typing-projects-header'), 'Featured Projects', 25);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-project1'), 'modularMidiDriver', 20);
+                await new Promise(resolve => setTimeout(resolve, 50));
+                await typeText(document.getElementById('typing-project1-desc'), 'A modular MIDI driver system for embedded devices, focusing on real-time performance and extensibility.', 13);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-project2'), 'MeinLieberScholli!', 20);
+                await new Promise(resolve => setTimeout(resolve, 50));
+                await typeText(document.getElementById('typing-project2-desc'), 'Bidirectional power meter system for monitoring and managing electrical power flow in both directions.', 13);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-more-projects'), 'More projects coming soon... 🚧', 20);
             },
             
             contact: async () => {
-                await typeText(document.getElementById('typing-contact-header'), 'Let\'s connect and build something amazing!', 80);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-email'), 'stern@jorim.xyz', 80);
-                await new Promise(resolve => setTimeout(resolve, 200));
-                await typeText(document.getElementById('typing-github'), 'github.com/jrmfrbg', 80);
-                await new Promise(resolve => setTimeout(resolve, 200));
-                await typeText(document.getElementById('typing-instagram'), 'instagram.com/jrm.frbg', 80);
-                await new Promise(resolve => setTimeout(resolve, 300));
-                await typeText(document.getElementById('typing-ready'), 'Ready to collaborate!', 80);
+                await typeText(document.getElementById('typing-contact-header'), 'Let\'s connect and build something amazing!', 20);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-email'), 'stern@jorim.xyz', 20);
+                await new Promise(resolve => setTimeout(resolve, 50));
+                await typeText(document.getElementById('typing-github'), 'github.com/jrmfrbg', 20);
+                await new Promise(resolve => setTimeout(resolve, 50));
+                await typeText(document.getElementById('typing-instagram'), 'instagram.com/jrm.frbg', 20);
+                await new Promise(resolve => setTimeout(resolve, 75));
+                await typeText(document.getElementById('typing-ready'), 'Ready to collaborate!', 20);
             }
         };
 
@@ -645,7 +645,7 @@
             initProjectEffects();
             
             // Start typing animation for about section after a brief delay
-            setTimeout(() => typingAnimations.about(), 500);
+            setTimeout(() => typingAnimations.about(), 125);
         });
     </script>
 </body>
